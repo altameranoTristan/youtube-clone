@@ -1,0 +1,124 @@
+.icons-img{
+    width: 24px;
+}
+
+/* LEFT */
+.icons-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.icons-span:hover{
+    background-color: rgb(227, 227, 227);
+}
+.icons-span:active{
+    background-color: rgb(206, 206, 206);
+}
+
+#yt-logo-span{
+    padding: 18px 14px 18px 16px;
+}
+
+#yt-logo-img{
+    width: 100px;
+}
+
+/* CENTER */
+
+#search-bar-span{
+    flex: 1;
+    width: 0;
+    max-width: 700px;
+}
+#search-bar{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 22px ;
+    border-bottom-left-radius: 22px ;
+}
+
+#search-bar::placeholder{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    letter-spacing: -1.2px;
+    color: rgb(138, 138, 138);
+}
+
+#search-btn{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: -2px;
+    height: 40px;
+    width: 64px;
+    border-top-right-radius: 22px ;
+    border-bottom-right-radius: 22px ;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+/* RIGHT */
+
+#notification{
+    position: relative;
+}
+
+.notifications-count{
+    background-color: red;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-pfp-span{
+    text-align: center;
+    padding: 1px 6px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+#my-pfp-img{
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+@media (orientation : portrait) {
+    #hamburger-icon-id, #voice-search-icon-id, #search-bar, #upload-span {
+        display: none;
+    }
+    #search-btn{
+        border: 0;
+    }
+
+    #yt-logo-img{
+        margin-left: -50px;
+    }
+
+    #search-btn{
+        text-align: end;
+        border: 0;
+        margin:10px;
+        cursor: pointer;
+    }
+}
